@@ -1,6 +1,6 @@
 <?php
 //add theme support
-add_theme_support('post-thumbnails',array('post'));
+add_theme_support('post-thumbnails',array('post', 'sliders'));
 
 
 // Remove Open Sans that WP adds from frontend
