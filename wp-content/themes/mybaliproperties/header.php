@@ -59,25 +59,31 @@
 <header id="myCarousel" class="carousel slide container">
 
     <!-- Wrapper for slides -->
+
     <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill" style="background-image:url('images/1.jpg');"></div>
-            <div class="carousel-caption">
-                <h2></h2>
+        <?php
+        $i = 0;
+        $args_slider = array(
+            'post_type' 	 => 'sliders',
+            'order'			 => 'asc'
+        );
+        $querySlider = get_posts($args_slider);
+
+
+        foreach ($querySlider as $slider) {
+            $i++;
+            $url = wp_get_attachment_image_src(get_post_thumbnail_id($slider->ID), 'large');
+        ?>
+            <div class="item<?=$i==1?' active':''?>">
+                <div class="fill" style="background-image:url('<?= $url[0] ?>');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('images/2.jpg');"></div>
-            <div class="carousel-caption">
-                <h2></h2>
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('images/3.jpg');"></div>
-            <div class="carousel-caption">
-                <h2></h2>
-            </div>
-        </div>
+        <?php
+        }
+        ?>
+
     </div>
 
     <!-- Controls -->
