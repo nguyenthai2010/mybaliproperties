@@ -38,7 +38,7 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45495495" vertical-offset="1224" max-vertical-offset="2222">
+            <state vertical-scroll-proportion="0.6036036" vertical-offset="1092" max-vertical-offset="2222">
               <caret line="74" column="76" selection-start-line="74" selection-start-column="76" selection-end-line="74" selection-end-column="76" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -310,7 +310,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45495495" vertical-offset="1224" max-vertical-offset="2222">
+        <state vertical-scroll-proportion="0.6036036" vertical-offset="1092" max-vertical-offset="2222">
           <caret line="74" column="76" selection-start-line="74" selection-start-column="76" selection-end-line="74" selection-end-column="76" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
