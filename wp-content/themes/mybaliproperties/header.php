@@ -36,14 +36,14 @@
 <div class="container">
     <div class="row headertop">
         <div class="col-md-4 col-sm-4">
-            <a href="#" class="logo"><img src="images/logo.png" width="179" height="119"></a>
+            <a href="#" class="logo"><img src="images/logo.png" width="170" height="118"></a>
         </div>
         <div class="col-md-8 col-sm-8 sharing">
             <ul>
 
                 <li class="icon-bg"><i class="fa fa-facebook"></i></li>
                 <li class="icon-bg"><i class="fa fa-twitter"></i></li>
-                <li><i class="fa fa-envelope-o"></i> info@mybaliproperties.com</li>
+                <li><img src="images/icon-envelop.png"> info@mybaliproperties.com</li>
                 <li><i class="fa fa-phone"></i> +62 361 761 883</li>
 
 
