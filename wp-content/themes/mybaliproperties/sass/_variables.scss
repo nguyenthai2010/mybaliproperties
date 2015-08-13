@@ -1,0 +1,14 @@
+
+@mixin fontRegular ( $value, $line:1.1 ) {
+  font-family: 'Lato', sans-serif;
+  font-size: $value;
+  line-height: $line;
+  font-weight: 400;
+}
+
+@mixin fontBold ( $value, $line:1.1 ) {
+  font-family: 'Lato', sans-serif;
+  font-size: $value;
+  line-height: $line;
+  font-weight: 700;
+}

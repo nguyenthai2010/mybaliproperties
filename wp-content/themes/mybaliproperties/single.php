@@ -76,7 +76,7 @@ get_header();
 
             <div class="info-views">
                 <div class="col-lg-12">
-                    <h2 class="panel-body">Services Panels</h2>
+                    <h2 >Views</h2>
                 </div>
 
                 <div class="col-md-3 col-sm-6">
