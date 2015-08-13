@@ -6,13 +6,16 @@ var clsProperties = (function() {
     //INIT
     function init(){
         popup();
+        //createRadio()
     }
 
     //FANCYBOX
     function popup(){
         $(".fancybox").fancybox();
     }
-
+    function createRadio(){
+        $('.iCheck input, .accept-this').iCheck();
+    }
     //MAP
     function render_map( $el ) {
 

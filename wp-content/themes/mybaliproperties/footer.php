@@ -15,6 +15,7 @@
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
+<script src="js/icheck.js"></script>
 <script src="js/class.single.js"></script>
 <script src="js/jquery.fancybox.js"></script>
 

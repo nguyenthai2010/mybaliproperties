@@ -1,0 +1,182 @@
+.margin-bot-0{
+	margin-bottom: 0;
+}
+.sidebar{
+	.well{
+		background: #eee;
+		border-radius: 0;
+		border-color: #eee;
+		box-shadow: none;
+		-webkit-box-shadow:none;
+	}
+	.villaWell{
+		padding-bottom: 40px;
+	}
+	.panel-body{
+		padding: 0;
+		padding-left: 10px;
+	}
+	ul{
+		padding-left: 10px;
+		margin-left: 0;
+		li{
+			list-style-type: none;
+			background: url(../images/dot.png) no-repeat left 10px;
+			padding-left: 10px;
+			padding-bottom: 3px;
+			a{
+				@include fontRegular(14px);
+				line-height: 24px;
+				color: #333;
+			}
+		}
+	}
+	.btn-sidebar{
+		padding-left: 9px;
+		a{
+			@include fontRegular(14px);
+			background: #2ac79d;
+			text-transform: uppercase;
+			border: none;
+			border-radius: 0;
+		    padding: 9px 19px;
+		    width: 282px;
+		    text-align: left;
+		    margin-bottom: 5px;
+		    float: none;
+		    display: block;
+		}
+	}
+	.formWell{
+		background: #e3e3e3;
+		    padding: 9px 28px;
+	}
+	.subscribeWell{
+		background: #2ac79d;
+		border-color: #2ac79d;
+		h3{
+			@include fontBold(18px);
+			line-height: 24px;
+			color: #fff;
+			text-align: center;
+		}
+		button[type="submit"]{
+			background: #009b72;
+			text-transform: uppercase;
+		    border: none;
+		    border-radius: 0;
+		    color: #fff;
+		    padding: 10px 19px;
+		    width: 100%;
+		    cursor: pointer;
+		}
+		p{
+			margin-bottom: 16px;
+		}
+	}
+}
+.contactForm{
+	h3{
+		@include fontBold(18px);
+		color: #333;
+		text-align: center;
+	}
+	.contactLink{
+		a{
+			background: #2ac79d;
+			@include fontRegular(18px);
+			padding: 15px 0;
+			text-align: center;
+			width: 100%;
+			border-radius: 26px;
+			border: 0;
+			margin-bottom: 7px;
+			margin-top: 2px;
+			&.btn-phone{
+				span{
+					padding-left: 22px;
+					background: url(../images/icon-phone.png) no-repeat left center;
+				}
+			}
+			&.btn-email{
+				span{
+					padding-left: 32px;
+					background: url(../images/icon-message.png) no-repeat left center;
+				}
+			}
+		}
+	}
+}
+.enquieryForm, .subscribeForm{
+	input[type="email"], input[type="text"]{
+		border: 1px solid #ccc;
+		@include fontRegular(14px);
+		padding: 15px 10px;
+		color: #333;
+		outline: none;
+		border-radius: 3px;
+		width: 100%;
+		&::-webkit-input-placeholder { color:#333; }
+		&::-moz-placeholder { color:#333; } /* firefox 19+ */
+		&:-ms-input-placeholder { color:#333; } /* ie */
+		&:-moz-placeholder { color:#333; }
+		border: 1px solid #ccc;
+
+	}
+	p{
+		margin-bottom: 13px;
+		position: relative;
+		span[role="alert"]{
+			@include fontRegular(12px);
+			    padding-top: 5px;
+		}
+	}
+	.wpcf7-validation-errors{
+		display: none!important;
+	}
+	textarea{
+		border: 1px solid #ccc;
+		@include fontRegular(14px);
+		padding: 15px 10px;
+		width: 100%;
+		color: #333;
+		&::-webkit-input-placeholder { color:#333; }
+		&::-moz-placeholder { color:#333; } /* firefox 19+ */
+		&:-ms-input-placeholder { color:#333; } /* ie */
+		&:-moz-placeholder { color:#333; }
+		outline: none;
+		border-radius: 3px;
+		height: 82px;
+		resize: none;
+		border: 1px solid #ccc;
+	}
+	.ajax-loader{
+		position: absolute;
+    top: 10px;
+	}
+	.acceptCk{
+		.ckText{
+			@include fontRegular(14px);
+			color: #333;
+		}
+	}
+	input[type="submit"]{
+		@include fontRegular(14px);
+		background: #2ac79d;
+	    text-transform: uppercase;
+	    border: none;
+	    border-radius: 0;
+	    color: #fff;
+	        padding: 10px 19px;
+	    width: 100%;
+	    cursor: pointer;
+	}
+}
+.acceptCk{
+	
+	label{
+		@include fontRegular(14px);
+	}
+
+}
+
