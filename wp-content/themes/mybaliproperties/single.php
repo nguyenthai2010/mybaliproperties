@@ -1,49 +1,63 @@
 <?php
 get_header();
 ?>
-    <!-- Header Carousel -->
-
-    <header id="myCarousel" class="carousel slide container">
-
-        <!-- Wrapper for slides -->
-
-        <div class="carousel-inner">
-            <?php
-            $i = 0;
-            $args_slider = array(
-                'post_type' 	 => 'sliders',
-                'order'			 => 'asc'
-            );
-            $querySlider = get_posts($args_slider);
+<?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?>
+<!-- Header Carousel -->
+        <?php
+        $specifications = get_field('specifications', get_the_ID());
+        $views_array = get_field('views', get_the_ID());
+        $location_text = get_field('location_text', get_the_ID());
+        $location_google_map = get_field('location_google_map', get_the_ID());
+        $location_image_map = get_field('location_image_map', get_the_ID());
+        $prices = get_field('prices', get_the_ID());
+        $location_google_map = get_field('location_google_map', get_the_ID());
 
 
-            foreach ($querySlider as $slider) {
-                $i++;
-                $url = wp_get_attachment_image_src(get_post_thumbnail_id($slider->ID), 'large');
-                ?>
-                <div class="item<?=$i==1?' active':''?>">
-                    <div class="fill" style="background-image:url('<?= $url[0] ?>');"></div>
-                    <div class="carousel-caption">
-                        <h2></h2>
-                    </div>
-                </div>
-            <?php
-            }
+        ?>
+
+<header id="myCarousel" class="carousel slide container">
+
+    <!-- Wrapper for slides -->
+
+    <div class="carousel-inner">
+        <?php
+        $i = 0;
+        foreach($views_array as $view)
+        {
+            $i++;
+            $objpicture = $view['picture'];
+            $thumbnail = $objpicture['sizes']['large'];
+            //print_r($objpicture);
             ?>
+            <div class="item<?=$i==1?' active':''?>">
+                <div class="fill" style="background-image:url('<?=$thumbnail ?>');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+        <?php
+        }
+        ?>
 
-        </div>
+    </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</header>
+
 <!-- Page Content -->
 <div class="container">
     <div class="row">
+
+
+
+
 
         <!-- Blog Entries Column -->
         <div class="col-md-8">
@@ -53,7 +67,7 @@ get_header();
                         LOCATION: JALAN DOUBLE SIX, LEGAIN BEACH, BALI.
                     </p>
                     <p class="price">
-                        now selling at US $440,000.
+                        <?=$prices?>
                     </p>
             </div>
 
@@ -124,7 +138,8 @@ get_header();
 
     </div>
     <!-- /.row -->
-
+    <?php endwhile; ?>
+<?php endif; ?>
 
 <?php
     get_footer();
