@@ -2,6 +2,8 @@
 //add theme support
 add_theme_support('post-thumbnails',array('post', 'sliders'));
 
+//change label post
+include 'inc/change_label_post.php';
 
 // Remove Open Sans that WP adds from frontend
 if (!function_exists('remove_wp_open_sans')) :
