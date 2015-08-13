@@ -68,7 +68,9 @@ get_header();
             </div>
 
             <hr>
-            <div class="info-detail"></div>
+            <div class="info-detail">
+                <?php the_content(); ?>
+            </div>
 
             <div class="info-views">
                 <div class="col-lg-12">

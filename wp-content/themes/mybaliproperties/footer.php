@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-lg-12">
             <p>
-                <a href="tel:+62361761883">+62 361 761 883</a> | <a href="mailto:info@mybaliproperties.com">info@mybaliproperties.com</a><br>
+                <a class="phone" href="tel:+62361761883">+62 361 761 883</a> | <a href="mailto:info@mybaliproperties.com">info@mybaliproperties.com</a><br>
                 Copyright &copy; 2015 All rights reserved
             </p>
         </div>

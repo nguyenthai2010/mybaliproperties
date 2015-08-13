@@ -113,6 +113,10 @@ header.carousel .fill {
 h2 {
   @include fontBold(18px);
   color: #2ac79d;
+
+  &.bigger {
+    @include fontBold(20px);
+  }
 }
 
 h1 {
@@ -133,7 +137,20 @@ p {
 /* Footer Styles */
 
 footer {
-  margin: 50px 0;
+  margin: 20px 0 25px 0;
+
+  @include fontRegular(12px);
+
+  a {
+    color: #2ac79d;
+    @include fontRegular(14px);
+    text-decoration: underline;
+
+    &.phone {
+      color: #333;
+      text-decoration: none;
+    }
+  }
 }
 
 .info-views .panel-body {
