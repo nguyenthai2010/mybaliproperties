@@ -13,6 +13,7 @@ body {
 
 body {
   @include fontRegular(16px);
+  color: #333333;
 }
 
 .img-portfolio {
@@ -114,9 +115,43 @@ h2 {
   color: #2ac79d;
 }
 
+h1 {
+  @include fontBold(25px);
+}
+
+p {
+  &.location {
+    @include fontRegular(17px);
+  }
+
+  &.price {
+    @include fontRegular(17px);
+    color: #2ac79d;
+  }
+}
+
 /* Footer Styles */
 
 footer {
   margin: 50px 0;
 }
 
+.info-views .panel-body {
+  i {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 60px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  &:hover {
+    i {
+      opacity: 1;
+    }
+  }
+
+}

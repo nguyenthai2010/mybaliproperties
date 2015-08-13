@@ -55,16 +55,12 @@ get_header();
 <div class="container">
     <div class="row">
 
-
-
-
-
         <!-- Blog Entries Column -->
         <div class="col-md-8">
             <div >
                 <h1>Villa Kemuning</h2>
                     <p class="location">
-                        LOCATION: JALAN DOUBLE SIX, LEGAIN BEACH, BALI.
+                        LOCATION: <?=$location_text?>
                     </p>
                     <p class="price">
                         <?=$prices?>
@@ -78,49 +74,51 @@ get_header();
                 <div class="col-lg-12">
                     <h2 >Views</h2>
                 </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="images/pic/p1.png">
+                <?php
+                $i = 0;
+                foreach($views_array as $view)
+                {
+                    $i++;
+                    $objpicture = $view['picture'];
+                    $thumbnail = $objpicture['sizes']['thumbnail'];
+                    $large = $objpicture['sizes']['large'];
+                    //print_r($objpicture);
+                    ?>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <a href="<?=$large?>" rel="fancybox-thumb" class="fancybox"><img src="<?=$thumbnail?>"></a>
+                                <i class="fa fa-search"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php
+                }
+                ?>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="images/pic/p1.png">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="images/pic/p1.png">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="images/pic/p1.png">
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
             <div class="info-location">
                 <h2>Location</h2>
                 <p>
-                    <img class="img-responsive img-hover" src="images/pic/p5.png" alt="">
+                    <?php
+                    if( !empty($location_google_map) ):
+                    ?>
+                <div class="acf-map">
+                    <div class="marker" data-lat="<?php echo $location_google_map['lat']; ?>" data-lng="<?php echo $location_google_map['lng']; ?>"></div>
+                </div>
+                <?php endif; ?>
                 </p>
 
                 <p>
-                    <img class="img-responsive img-hover" src="images/pic/p6.png" alt="">
+                    <?php
+                    if( !empty($location_image_map) ):
+                        $thumb = $location_image_map['sizes']['large'];
+                    ?>
+                        <img class="img-responsive img-hover" src="<?=$thumb?>" alt="">
+            <?php endif; ?>
+
                 </p>
             </div>
 
@@ -140,6 +138,17 @@ get_header();
     <!-- /.row -->
     <?php endwhile; ?>
 <?php endif; ?>
+    <style type="text/css">
+
+        .acf-map {
+            width: 100%;
+            height: 400px;
+            border: #ccc solid 1px;
+            margin: 20px 0;
+        }
+
+    </style>
+
 
 <?php
     get_footer();

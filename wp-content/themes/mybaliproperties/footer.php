@@ -15,6 +15,8 @@
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
+<script src="js/class.single.js"></script>
+<script src="js/jquery.fancybox.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
@@ -24,6 +26,16 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        clsProperties.init();
+        $('.acf-map').each(function(){
+            clsProperties.render_map( $(this) );
+        });
+
+    });
 </script>
 <?php wp_footer(); ?>
 </body>
