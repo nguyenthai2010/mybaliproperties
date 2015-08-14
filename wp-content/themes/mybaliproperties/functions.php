@@ -5,6 +5,14 @@ add_theme_support('post-thumbnails',array('post', 'sliders'));
 //change label post
 include 'inc/change_label_post.php';
 
+//contact form
+include TEMPLATEPATH . '/email/smtp.php';
+include TEMPLATEPATH . '/email/xtemplate.contact.php';
+include TEMPLATEPATH . '/email/xtemplate.sendtoadmin.php';
+
+//display user request
+include TEMPLATEPATH . '/user_request/user_request.php';
+
 // Remove Open Sans that WP adds from frontend
 if (!function_exists('remove_wp_open_sans')) :
     function remove_wp_open_sans() {
