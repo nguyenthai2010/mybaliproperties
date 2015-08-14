@@ -47,11 +47,16 @@ body {
     }
     .icon-bg {
       background: #2aca9e;
-      padding: 5px 0;
+
       text-align: center;
       width: 30px;
       margin-left: 2px;
       font-size: 16px;
+      padding: 6px 0;
+      a {
+        display: block;
+
+      }
       i {
         color: #fff;
 

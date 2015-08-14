@@ -28,11 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/sass/_style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.67742" vertical-offset="826" max-vertical-offset="5192">
+              <caret line="54" column="15" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3462857" vertical-offset="379" max-vertical-offset="1452">
-              <caret line="31" column="121" selection-start-line="31" selection-start-column="121" selection-end-line="31" selection-end-column="121" />
+            <state vertical-scroll-proportion="-12.064516" vertical-offset="0" max-vertical-offset="1452">
+              <caret line="17" column="60" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -48,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.548388" vertical-offset="432" max-vertical-offset="1474">
-              <caret line="50" column="74" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="74" />
+            <state vertical-scroll-proportion="0.7027027" vertical-offset="498" max-vertical-offset="1518">
+              <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -76,11 +86,11 @@
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/sass/custom.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/js/class.single.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/sass/_style.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/sass/_sidebar.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/sidebar.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/sass/_style.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/header.php" />
       </list>
     </option>
   </component>
@@ -418,14 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/sass/_style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.451612" vertical-offset="4194" max-vertical-offset="5082">
-          <caret line="211" column="22" selection-start-line="211" selection-start-column="22" selection-end-line="211" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.419355" vertical-offset="1928" max-vertical-offset="2816">
@@ -450,6 +452,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.064516" vertical-offset="0" max-vertical-offset="1452">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/single.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.096774" vertical-offset="330" max-vertical-offset="3432">
@@ -458,18 +468,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/sass/_style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.548388" vertical-offset="432" max-vertical-offset="1474">
-          <caret line="50" column="74" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="74" />
+        <state vertical-scroll-proportion="-11.67742" vertical-offset="826" max-vertical-offset="5192">
+          <caret line="54" column="15" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/sidebar.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3462857" vertical-offset="379" max-vertical-offset="1452">
-          <caret line="31" column="121" selection-start-line="31" selection-start-column="121" selection-end-line="31" selection-end-column="121" />
+        <state vertical-scroll-proportion="0.7027027" vertical-offset="498" max-vertical-offset="1518">
+          <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
           <folding />
         </state>
       </provider>

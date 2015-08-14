@@ -36,6 +36,8 @@
 <?php
 $contact_phone = get_field('contact_phone', get_the_ID());
 $contact_mail = get_field('contact_mail', get_the_ID());
+$facebook_url = get_field('facebook_url', 'option');
+$twitter_url = get_field('twitter_url', 'option');
 ?>
 <!-- Header Top -->
 <div class="container">
@@ -46,8 +48,8 @@ $contact_mail = get_field('contact_mail', get_the_ID());
         <div class="col-md-8 col-sm-8 sharing">
             <ul>
 
-                <li class="icon-bg"><i class="fa fa-facebook"></i></li>
-                <li class="icon-bg"><i class="fa fa-twitter"></i></li>
+                <li class="icon-bg"><a href="<?=$facebook_url?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="icon-bg"><a href="<?=$twitter_url?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
                 <li><img src="images/icon-envelop.png"> <?=$contact_mail?></li>
                 <li><i class="fa fa-phone"></i> <?=$contact_phone?></li>
 
