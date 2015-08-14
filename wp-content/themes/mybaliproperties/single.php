@@ -1,20 +1,22 @@
-<?php
-get_header();
-?>
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-<!-- Header Carousel -->
+        <!-- Header Carousel -->
         <?php
-        $specifications = get_field('specifications', get_the_ID());
+        $property_ID = get_the_ID();
         $views_array = get_field('views', get_the_ID());
         $location_text = get_field('location_text', get_the_ID());
         $location_google_map = get_field('location_google_map', get_the_ID());
         $location_image_map = get_field('location_image_map', get_the_ID());
         $prices = get_field('prices', get_the_ID());
         $location_google_map = get_field('location_google_map', get_the_ID());
-
-
         ?>
+    <?php endwhile; ?>
+<?php endif; ?>
+
+<?php
+get_header();
+?>
+
 
 <header id="myCarousel" class="carousel slide container">
 
@@ -131,8 +133,7 @@ get_header();
 
     </div>
     <!-- /.row -->
-    <?php endwhile; ?>
-<?php endif; ?>
+
     <style type="text/css">
 
         .acf-map {

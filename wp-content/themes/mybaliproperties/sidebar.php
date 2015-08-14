@@ -1,36 +1,36 @@
+
+        <?php
+        $specifications = get_field('specifications', get_the_ID());
+        $download_files = get_field('download_files', get_the_ID());
+        $contact_phone = get_field('contact_phone', get_the_ID());
+        $contact_mail = get_field('contact_mail', get_the_ID());
+        ?>
 <div class="col-md-4 sidebar">
     <!-- Side Widget Well -->
     <div class="well villaWell margin-bot-0">
-        <h2 class="panel-body">Villa Specifications</h2>
-        <ul>
-        	<li>235 sq. meters under-roof</li>
-        	<li>3 floors</li>
-        	<li>4 bedrooms, 2 of which are master bedrooms</li>
-        	<li>Large master bedroom situated on the 3rd floor with 270 degree views, plus twin onsite bathroom and a large terrace.</li>
-        	<li>Master bedrooms with walk-in wardrobes</li>
-        	<li>Master bedrooms with walk-in wardrobes</li>
-        	<li>Full kitchen</li>
-        	<li>8 seater dining area</li>
-        	<li>Large lounge area with entertainment media</li>
-        	<li>Full size swimming pool</li>
-        	<li>Wooden sun bathing deck area</li>
-        	<li>Allocated storage areas for linen and cleaning materials</li>
-        	<li>Quality fittings and appliances</li>
-        	<li>Quality air-conditioning systems </li>
-        </ul>
+        <?=$specifications?>
         <div class="btn-sidebar">
-        	<a href="#" class="btn btn-success" role="button">DOWNLOAD PLANS</a>
-        	<a href="#" class="btn btn-success" role="button">DOWNLOAD MATERIAL SHEET</a>
-			<a href="#" class="btn btn-success" role="button">DOWNLOAD VILLA SPECIFICATIONS</a>
-			<a href="#" class="btn btn-success" role="button">DOWNLOAD FURNITURE SCHEDULE</a>
+            <?php
+            $i = 0;
+            foreach($download_files as $download)
+            {
+                $i++;
+                $download_name = $download['download_name'];
+                $download_file = $download['download_file'];
+                //print_r($objpicture);
+                ?>
+                <a href="<?=$download_file?>" target="_blank" class="btn btn-success" role="button"><?=$download_name?></a>
+            <?php
+            }
+            ?>
         </div>
     </div>
     <div class="well formWell margin-bot-0">	
     	<div class="contactForm">
         	<h3>Are you interested in this property?</h3>
         	<p class="contactLink">
-        		<a href="tel:+62 361 761 883" class="btn btn-phone btn-success" role="button"><span>+62 361 761 883</span></a>
-        		<a href="mailto:info@mybaliproperties.com" class="btn btn-email btn-success" role="button"><span>info@mybaliproperties.com</span></a>
+        		<a href="tel:<?=$contact_phone?>" class="btn btn-phone btn-success" role="button"><span><?=$contact_phone?></span></a>
+        		<a href="mailto:<?=$contact_mail?>" class="btn btn-email btn-success" role="button"><span><?=$contact_mail?></span></a>
         	</p>
         	<h3>or send us your enquiery</h3>
         	<div class="enquieryForm">

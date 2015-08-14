@@ -33,6 +33,10 @@
 </head>
 
 <body>
+<?php
+$contact_phone = get_field('contact_phone', get_the_ID());
+$contact_mail = get_field('contact_mail', get_the_ID());
+?>
 <!-- Header Top -->
 <div class="container">
     <div class="row headertop">
@@ -44,8 +48,8 @@
 
                 <li class="icon-bg"><i class="fa fa-facebook"></i></li>
                 <li class="icon-bg"><i class="fa fa-twitter"></i></li>
-                <li><img src="images/icon-envelop.png"> info@mybaliproperties.com</li>
-                <li><i class="fa fa-phone"></i> +62 361 761 883</li>
+                <li><img src="images/icon-envelop.png"> <?=$contact_mail?></li>
+                <li><i class="fa fa-phone"></i> <?=$contact_phone?></li>
 
 
 
