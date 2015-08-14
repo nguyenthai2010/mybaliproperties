@@ -3,20 +3,20 @@
     <div class="well villaWell margin-bot-0">
         <h2 class="panel-body">Villa Specifications</h2>
         <ul>
-        	<li><a href="#">235 sq. meters under-roof</a></li>
-        	<li><a href="#">3 floors</a></li>
-        	<li><a href="#">4 bedrooms, 2 of which are master bedrooms</a></li>
-        	<li><a href="#">Large master bedroom situated on the 3rd floor with 270 degree views, plus twin onsite bathroom and a large terrace.</a></li>
-        	<li><a href="#">Master bedrooms with walk-in wardrobes</a></li>
-        	<li><a href="#">Master bedrooms with walk-in wardrobes</a></li>
-        	<li><a href="#">Full kitchen</a></li>
-        	<li><a href="#">8 seater dining area</a></li>
-        	<li><a href="#">Large lounge area with entertainment media</a></li>
-        	<li><a href="#">Full size swimming pool</a></li>
-        	<li><a href="#">Wooden sun bathing deck area</a></li>
-        	<li><a href="#">Allocated storage areas for linen and cleaning materials</a></li>
-        	<li><a href="#">Quality fittings and appliances</a></li>
-        	<li><a href="#">Quality air-conditioning systems </a></li>
+        	<li>235 sq. meters under-roof</li>
+        	<li>3 floors</li>
+        	<li>4 bedrooms, 2 of which are master bedrooms</li>
+        	<li>Large master bedroom situated on the 3rd floor with 270 degree views, plus twin onsite bathroom and a large terrace.</li>
+        	<li>Master bedrooms with walk-in wardrobes</li>
+        	<li>Master bedrooms with walk-in wardrobes</li>
+        	<li>Full kitchen</li>
+        	<li>8 seater dining area</li>
+        	<li>Large lounge area with entertainment media</li>
+        	<li>Full size swimming pool</li>
+        	<li>Wooden sun bathing deck area</li>
+        	<li>Allocated storage areas for linen and cleaning materials</li>
+        	<li>Quality fittings and appliances</li>
+        	<li>Quality air-conditioning systems </li>
         </ul>
         <div class="btn-sidebar">
         	<a href="#" class="btn btn-success" role="button">DOWNLOAD PLANS</a>

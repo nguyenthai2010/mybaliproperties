@@ -24,11 +24,11 @@
 			background: url(../images/dot.png) no-repeat left 10px;
 			padding-left: 10px;
 			padding-bottom: 3px;
-			a{
-				@include fontRegular(14px);
-				line-height: 24px;
-				color: #333;
-			}
+
+          @include fontRegular(14px);
+          line-height: 24px;
+          color: #333;
+			
 		}
 	}
 	.btn-sidebar{
