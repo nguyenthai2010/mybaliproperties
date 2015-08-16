@@ -155,15 +155,19 @@ class TT_Member_List_Table extends WP_List_Table {
     }
     function column_default($item, $column_name){
         switch($column_name){
+
             case 'c_phone':
                 if(empty($item['c_phone'])){
                     return '_';
                 }
-            case 'c_message':
-                if(empty($item['c_phone'])){
+            case 'c_receive':
+                if(empty($item['c_receive'])){
                     return '_';
                 }
-            case 'c_username':
+            case 'c_message':
+                if(empty($item['c_message'])){
+                    return '_';
+                }
             case 'c_email':
                  return $item[ $column_name ];
                
@@ -212,7 +216,8 @@ class TT_Member_List_Table extends WP_List_Table {
             'c_username' =>'Name',
             'c_email'     => 'Email',
             'c_phone'    => 'Phone',
-            'c_message'    => 'Message'
+            'c_message'    => 'Message',
+            'c_receive'    => 'Receive News'
         );
         
         return $columns;
@@ -238,7 +243,8 @@ class TT_Member_List_Table extends WP_List_Table {
             'c_username'  => array('c_username',false),
             'c_email' => array('c_email',false),
             'c_phone'   => array('c_phone',false),
-            'c_message' => array('c_message',false)
+            'c_message' => array('c_message',false),
+            'c_receive' => array('c_receive',false)
         );
         return $sortable_columns;
     }
@@ -329,7 +335,7 @@ class TT_Member_List_Table extends WP_List_Table {
                 $search = trim($search);
                
                 /* Notice how you can search multiple columns for your search term easily, and return one data set */
-                $s_query = "SELECT id, c_username, c_email, c_phone, c_message FROM wp_user_request where c_username LIKE '%$search%'
+                $s_query = "SELECT id, c_username, c_email, c_phone, c_message, c_receive FROM wp_user_request where c_username LIKE '%$search%'
                     OR c_email LIKE '%$search%'
                     OR c_phone LIKE '%$search%'
                     OR c_message LIKE '%$search%'
@@ -340,7 +346,7 @@ class TT_Member_List_Table extends WP_List_Table {
                     array_push($data, (array)$querydatum);}
          
           }else{
-            $query = 'SELECT id, c_username, c_email, c_phone, c_message FROM wp_user_request';
+            $query = 'SELECT id, c_username, c_email, c_phone, c_message, c_receive FROM wp_user_request';
             
             $members = $wpdb->get_results($query);
             $data = array();

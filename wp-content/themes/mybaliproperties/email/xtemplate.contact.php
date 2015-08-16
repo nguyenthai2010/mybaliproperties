@@ -8,6 +8,10 @@
         $email = $_REQUEST['cemail'];
         $phone = $_REQUEST['cphone'];
         $message = $_REQUEST['cmessage'];
+        $ckaccept = $_REQUEST['ckaccept'];
+        $valueaccept = $ckaccept == 1 ? 'Yes':'No';
+
+
         include_once	'xtemplate.class.php';
         $header   	= 'Content-type: text/html; charset=utf-8\r\n';				
         $title 		= 'User Contact';
@@ -21,6 +25,7 @@
         $parseTemplate->assign('email',$email);	
         $parseTemplate->assign('phone',$phone); 
 		$parseTemplate->assign('message',$message);
+        $parseTemplate->assign('valueaccept',$valueaccept);
 		
         $parseTemplate->parse('main');	
 
@@ -31,9 +36,11 @@
                   'c_username'          => $name,
                   'c_email'        => $email,
                   'c_phone'       => $phone,
+                  'c_receive'       => $ckaccept,
                   'c_message'          => $message
                 ),
                 array(
+                  '%s',
                   '%s',
                   '%s',
                   '%s',
@@ -50,6 +57,6 @@
                 die();
             }
         }else{
-            
+            echo "-1";
         }
     }
