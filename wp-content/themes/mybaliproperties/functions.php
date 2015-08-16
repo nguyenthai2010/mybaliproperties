@@ -16,4 +16,3 @@ if (!function_exists('remove_wp_open_sans')) :
     // Uncomment below to remove from admin
     // add_action('admin_enqueue_scripts', 'remove_wp_open_sans');
 endif;
-
