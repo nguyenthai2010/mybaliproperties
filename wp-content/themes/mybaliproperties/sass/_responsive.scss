@@ -92,3 +92,29 @@
     }
   }
 }
+
+
+.homepage {
+  .img-portfolio {
+    margin-bottom: 15px;
+  }
+
+  header.carousel .carousel {
+    height: 70%;
+  }
+
+  .headertop {
+    .logo {
+      text-align: center;
+    }
+    .sharing {
+
+      ul {
+        margin: 0 auto;
+        display: table;
+        padding: 20px 0;
+      }
+
+    }
+  }
+}

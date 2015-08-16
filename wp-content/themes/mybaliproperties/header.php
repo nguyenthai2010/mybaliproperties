@@ -54,7 +54,7 @@ $twitter_url = get_field('twitter_url', 'option');
 <div class="container">
     <div class="row headertop">
         <div class="col-md-4 col-sm-12">
-            <a href="#" class="logo"><img src="images/logo.png" width="170" height="118"></a>
+            <a class="logo"><img src="images/logo.png" width="170" height="118"></a>
         </div>
         <div class="col-md-8 col-sm-12 sharing">
             <ul>
