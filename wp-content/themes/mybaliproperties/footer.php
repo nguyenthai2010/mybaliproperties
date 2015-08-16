@@ -17,6 +17,8 @@
 <script src="js/jquery.js"></script>
 <script src="js/icheck.js"></script>
 <script src="js/class.single.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/validate.contact.js"></script>
 <script src="js/jquery.fancybox.js"></script>
 
 <!-- Bootstrap Core JavaScript -->

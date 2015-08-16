@@ -6,7 +6,7 @@ var clsProperties = (function() {
     //INIT
     function init(){
         popup();
-        //createRadio()
+        createRadio();
     }
 
     //FANCYBOX
