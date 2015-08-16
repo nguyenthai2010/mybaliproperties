@@ -38,29 +38,38 @@ body {
     }
     li {
       float: right;
-      padding-right: 15px;
-      padding-top: 14px;
+      padding-left: 15px;
 
       img, i {
         padding-right: 3px;
       }
+
+      div {
+        padding-left: 15px;
+        padding-top: 15px;
+        float: left;
+      }
     }
     .icon-bg {
-      background: #2aca9e;
+      div {
+        background: #2aca9e;
 
-      text-align: center;
-      width: 30px;
-      margin-left: 2px;
-      font-size: 16px;
-      padding: 6px 0;
-      a {
-        display: block;
+        text-align: center;
+        width: 30px;
+        margin-left: 2px;
+        font-size: 16px;
+        padding: 6px 0;
 
+        a {
+          display: block;
+
+        }
+        i {
+          color: #fff;
+
+        }
       }
-      i {
-        color: #fff;
 
-      }
     }
   }
 }

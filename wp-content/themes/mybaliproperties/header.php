@@ -6,11 +6,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+
     <base href="<?php echo get_bloginfo('template_url')?>/"></base>
 
-    <title>Mybaliproperties.com</title>
+    <title>My Bali Properties <?php wp_title(); ?></title>
+    <meta name="description" content="<?php if ( is_single() ) {
+        $post_id = get_queried_object_id();
+        $post_obj = get_post( $post_id );
+        $content = $post_obj->post_content;
+
+        echo strip_tags($content);
+
+    } else {
+        bloginfo('description');
+    }
+    ?>" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -42,19 +53,20 @@ $twitter_url = get_field('twitter_url', 'option');
 <!-- Header Top -->
 <div class="container">
     <div class="row headertop">
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4 col-sm-12">
             <a href="#" class="logo"><img src="images/logo.png" width="170" height="118"></a>
         </div>
-        <div class="col-md-8 col-sm-8 sharing">
+        <div class="col-md-8 col-sm-12 sharing">
             <ul>
 
-                <li class="icon-bg"><a href="<?=$facebook_url?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li class="icon-bg"><a href="<?=$twitter_url?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><img src="images/icon-envelop.png"> <?=$contact_mail?></li>
-                <li><i class="fa fa-phone"></i> <?=$contact_phone?></li>
-
-
-
+                <li class="icon-bg">
+                    <div><a href="<?=$facebook_url?>" target="_blank"><i class="fa fa-facebook"></i></a></div>
+                    <div><a href="<?=$twitter_url?>" target="_blank"><i class="fa fa-twitter"></i></a></div>
+                </li>
+                <li>
+                    <div><img src="images/icon-envelop.png"> <?=$contact_mail?></div>
+                    <div><i class="fa fa-phone"></i> <?=$contact_phone?></div>
+                </li>
 
             </ul>
         </div>
