@@ -31,6 +31,7 @@ $(document).ready(function(){
                     running = false;
 
                     var msg = 'Message sent successful!';
+                    console.log(response);
                     if(response == 1){
 
                     }else{

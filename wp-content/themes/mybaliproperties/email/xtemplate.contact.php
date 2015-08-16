@@ -48,8 +48,7 @@
                 ) 
             );
             if($results){
-                send_new_subscriber($email);
-                return wp_mail($contact_email, $title, $parseTemplate->text('main'), $title);
+                wp_mail($contact_email, $title, $parseTemplate->text('main'), $title);
                 echo "1";
                 die();
             }else{
