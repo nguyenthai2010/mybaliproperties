@@ -1,4 +1,29 @@
 /* Responsive Styles */
+@media (min-width: 1200px)
+{
+  .container {
+    width: 1200px;
+
+    padding: 0;
+  }
+
+  header.carousel {
+    height: 620px;
+  }
+}
+
+
+
+@media(max-width:1199px) {
+  #myCarousel {
+    a.left.carousel-control {
+      left: 15px;
+    }
+    .carousel-control.right {
+      right: 15px;
+    }
+  }
+}
 
 @media(max-width:991px) {
   .customer-img,

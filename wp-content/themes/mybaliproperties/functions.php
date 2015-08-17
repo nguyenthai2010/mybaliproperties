@@ -24,3 +24,6 @@ if (!function_exists('remove_wp_open_sans')) :
     // Uncomment below to remove from admin
     // add_action('admin_enqueue_scripts', 'remove_wp_open_sans');
 endif;
+
+
+add_image_size( 'small-cropped', 192, 120, true ); // Creates a cropped new image 200px by 200px high

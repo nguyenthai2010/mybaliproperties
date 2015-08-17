@@ -11,17 +11,41 @@
     <base href="<?php echo get_bloginfo('template_url')?>/"></base>
 
     <title>My Bali Properties <?php wp_title(); ?></title>
-    <meta name="description" content="<?php if ( is_single() ) {
+
+
+    <!--Sharing-->
+    <?php
+    $title_share = get_the_title();
+    if ( is_single() ) {
         $post_id = get_queried_object_id();
         $post_obj = get_post( $post_id );
         $content = $post_obj->post_content;
 
-        echo strip_tags($content);
+        $description_share = strip_tags($content);
 
     } else {
-        bloginfo('description');
+        $description_share = bloginfo('description');
     }
-    ?>" />
+
+    $arr_img = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'large');
+    $image_share = $arr_img[0];
+
+    ?>
+    <meta property="og:site_name" content="My Bali Properties" />
+    <meta property="og:title" content="<?php echo $title_share == '' ? 'My Bali Properties' : 'My Bali Properties - ' . $title_share; ?>" />
+    <meta property="og:description" content="<?=$description_share?>" />
+    <meta property="og:image" content="<?php echo $image_share != '' ? $image_share : '' ?>" />
+    <meta property="og:url" content="<?php echo get_home_url() ?>" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@MyBaliProperties">
+    <meta name="twitter:url" content="<?php echo get_home_url() ?>">
+    <meta name="twitter:title" content="<?php echo $title_share != '' ? 'My Bali Properties' : $title_share; ?>">
+    <meta name="twitter:description" content="<?=$description_share?>">
+    <meta name="twitter:image" content="<?php echo $image_share != '' ? $image_share : '' ?>">
+    <!--End Sharing-->
+
+    <meta name="description" content="<?=$description_share?>" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -47,8 +71,6 @@
 <?php
 $contact_phone = get_field('contact_phone', get_the_ID());
 $contact_mail = get_field('contact_mail', get_the_ID());
-$facebook_url = get_field('facebook_url', 'option');
-$twitter_url = get_field('twitter_url', 'option');
 ?>
 <!-- Header Top -->
 <div class="container">
@@ -60,12 +82,14 @@ $twitter_url = get_field('twitter_url', 'option');
             <ul>
 
                 <li class="icon-bg">
-                    <div><a href="<?=$facebook_url?>" target="_blank"><i class="fa fa-facebook"></i></a></div>
-                    <div><a href="<?=$twitter_url?>" target="_blank"><i class="fa fa-twitter"></i></a></div>
+                    <div id="twitterID"><a ><i class="fa fa-twitter"></i></a></div>
+                    <div id="facebookID"><a ><i class="fa fa-facebook"></i></a></div>
+
                 </li>
                 <li>
-                    <div><img src="images/icon-envelop.png"> <?=$contact_mail?></div>
                     <div><i class="fa fa-phone"></i> <?=$contact_phone?></div>
+                    <div><a href="mailto:<?=$contact_mail?>"><img src="images/icon-envelop.png"> <?=$contact_mail?></a></div>
+
                 </li>
 
             </ul>

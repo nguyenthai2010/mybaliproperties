@@ -60,7 +60,7 @@ get_header();
         <!-- Blog Entries Column -->
         <div class="col-md-8">
             <div >
-                <h1>Villa Kemuning</h2>
+                <h1><?=get_the_title()?></h2>
                     <p class="location">
                         LOCATION: <?=$location_text?>
                     </p>
@@ -84,8 +84,8 @@ get_header();
                 {
                     $i++;
                     $objpicture = $view['picture'];
-                    $thumbnail = $objpicture['sizes']['thumbnail'];
-                    $large = $objpicture['sizes']['large'];
+                    $thumbnail = $objpicture['sizes']['small-cropped'];
+                    $large = $objpicture['url'];
                     //print_r($objpicture);
                     ?>
                     <div class="col-md-3 col-sm-6">

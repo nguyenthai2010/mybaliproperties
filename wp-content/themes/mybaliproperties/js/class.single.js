@@ -7,6 +7,15 @@ var clsProperties = (function() {
     function init(){
         popup();
         createRadio();
+
+        //share
+        $('#facebookID').click(function(){
+            share_feed();
+        });
+
+        $('#twitterID').click(function(){
+            twShare();
+        });
     }
 
     //FANCYBOX
@@ -137,12 +146,53 @@ var clsProperties = (function() {
     }
 
 
-    //FUNCTION
+    //SHARING
+    function twShare(){
+        var share_url = $("meta[name='twitter:url']").attr("content");
+        var description = $("meta[name='twitter:description']").attr("content");
+        if(description.length > 96){
+            description = description.substr(0,96);
+            var last_space= description.lastIndexOf(' ');
+            if(last_space > 0){
+                description = description.substr(0,last_space);
+            }
+            description = description + '...';
+        }
 
+        var url = 'https://twitter.com/intent/tweet?text='+description+'&url='+share_url;
+        var w = 620;
+        var h = 360;
+        var left = (screen.width/2)-(w/2);
+        var top = (screen.height/2)-(h/2);
+        return window.open(url, 'Share', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+        window.open(url);
+    }
+
+    function share_feed()
+    {
+        var share_link = $("meta[property='og:url']").attr("content");
+        var picture = $("meta[property='og:image']").attr("content");
+        var name = $("meta[property='og:title']").attr("content");
+        var caption = '';
+        var description = $("meta[property='og:description']").attr("content");
+
+        var obj = {
+            method: 'feed',
+            link: share_link,
+            picture: picture,
+            name: name,
+            caption: caption,
+            description: description,
+            actions: [{ name: name, link: share_link }]
+        };
+        FB.ui(obj);
+    }
 
     //RETURN
     return {
         init:init,
+        twShare:twShare,
+        twShare:twShare,
         render_map:render_map
     }
 })();

@@ -49,6 +49,12 @@ body {
         padding-top: 15px;
         float: left;
       }
+
+      a {
+        text-decoration: underline;
+        color: #333;
+        cursor: pointer;
+      }
     }
     .icon-bg {
       div {
@@ -76,10 +82,10 @@ body {
 /* Home Page Carousel */
 #myCarousel {
   a.left.carousel-control {
-    left: 15px;
+    left: 0;
   }
   .carousel-control.right {
-    right: 15px;
+    right: 0;
   }
 }
 
@@ -98,6 +104,10 @@ header.carousel .fill {
   height: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background: none;
 }
 
 
@@ -142,7 +152,7 @@ p {
   }
 
   &.price {
-    @include fontRegular(17px);
+    @include fontBold(17px);
     color: #2ac79d;
   }
 }
@@ -167,6 +177,21 @@ footer {
 }
 
 .info-views .panel-body {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    min-height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #343434;
+    opacity: 0.7;
+    pointer-events: none;
+    display: none;
+  }
+
   i {
     pointer-events: none;
     position: absolute;
@@ -179,6 +204,10 @@ footer {
   }
 
   &:hover {
+    &::before {
+      display: block;
+    }
+
     i {
       opacity: 1;
     }
