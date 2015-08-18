@@ -41,13 +41,12 @@
     });
 </script>
 <?php wp_footer(); ?>
-
 <script>
     window.fbAsyncInit = function() {
         FB.init({
             appId      : '1482140678768202',
             xfbml      : true,
-            version    : 'v2.3'
+            version    : 'v2.4'
         });
     };
 
@@ -59,6 +58,7 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+
 </body>
 
 </html>

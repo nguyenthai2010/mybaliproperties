@@ -201,7 +201,7 @@ var clsProperties = (function() {
     return {
         init:init,
         twShare:twShare,
-        twShare:twShare,
+        share_feed:share_feed,
         render_map:render_map
     }
 })();
