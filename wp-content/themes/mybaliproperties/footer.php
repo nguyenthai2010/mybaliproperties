@@ -19,6 +19,7 @@
 <script src="js/class.single.js"></script>
 <script src="js/jquery.validate.js"></script>
 <script src="js/validate.contact.js"></script>
+<script src="js/validate.newsletter.js"></script>
 <script src="js/jquery.fancybox.js"></script>
 
 <!-- Bootstrap Core JavaScript -->

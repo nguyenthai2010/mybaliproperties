@@ -12,6 +12,7 @@ $(document).ready(function(){
             	email: true
             }
         },
+        errorPlacement: function(error, element){},
         submitHandler: function(form) {
             if(running) return false;
 

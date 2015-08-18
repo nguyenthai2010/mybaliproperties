@@ -82,10 +82,10 @@ and investment opportunities</h3>
                     <input id="fieldjdiddd" name="cm-f-jdiddd" type="text" placeholder="Surname"/>
                 </p>
                 <p>
-                    <input id="fieldEmail" name="cm-tidix-tidix" type="email" required placeholder="Email"/>
+                    <input id="fieldEmail" name="cm-tidix-tidix" type="email"  placeholder="Email"/>
                 </p>
                 <p>
-                    <button type="submit" class="btn btn-success">SUBSCRIBE TO OUR NEWSLETTER</button>
+                    <button type="submit" id="btn-newsletter" class="btn btn-success">SUBSCRIBE TO OUR NEWSLETTER</button>
                 </p>
             </form>
         </div>
