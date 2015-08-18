@@ -221,3 +221,20 @@
 		width: 100%;
 	}
 }
+
+@media (min-width: 992px){
+	.sidebar .btn-sidebar a{
+		padding: 9px 15px;
+		font-size: 13px;
+		width: 100%;
+	}
+	.sidebar .btn-sidebar{
+		padding-left: 0;
+	}
+	.sidebar .formWell{
+		    padding: 9px 20px;
+	}
+	.contactForm .contactLink a{
+		font-size: 16px;
+	}
+}
