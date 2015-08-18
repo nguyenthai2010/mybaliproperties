@@ -20,7 +20,16 @@ var clsProperties = (function() {
 
     //FANCYBOX
     function popup(){
-        $(".fancybox").fancybox();
+
+
+        $(".fancybox").fancybox({
+            padding: 0,
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+        });
     }
     function createRadio(){
         $('.iCheck input, .accept-this').iCheck();
