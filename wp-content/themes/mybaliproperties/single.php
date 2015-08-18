@@ -29,7 +29,8 @@ get_header();
         {
             $i++;
             $objpicture = $view['picture'];
-            $thumbnail = $objpicture['sizes']['large'];
+            //$thumbnail = $objpicture['sizes']['large'];
+            $thumbnail = $objpicture['url'];
             //print_r($objpicture);
             ?>
             <div class="item<?=$i==1?' active':''?>">
