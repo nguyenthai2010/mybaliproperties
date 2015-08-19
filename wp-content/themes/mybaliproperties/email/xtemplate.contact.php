@@ -5,6 +5,8 @@
     add_action("wp_ajax_nopriv_contact_request", "contact_form");
     function 	contact_form(){
         $name = $_REQUEST['cname'];
+        $surname = $_REQUEST['csurnamecsurname'];
+
         $email = $_REQUEST['cemail'];
         $phone = $_REQUEST['cphone'];
         $message = $_REQUEST['cmessage'];
@@ -21,6 +23,7 @@
         $date = date('d-m-Y');
         $parseTemplate	=	new XTemplate('xtemplate.contact.html');
         $parseTemplate->assign('name',$name);
+        $parseTemplate->assign('surname',$surname);
         $parseTemplate->assign('date',$date);             
         $parseTemplate->assign('email',$email);	
         $parseTemplate->assign('phone',$phone); 
@@ -34,6 +37,7 @@
             $results = $wpdb->insert('wp_user_request',
                 array(
                   'c_username'          => $name,
+                    'c_lastname'          => $surname,
                   'c_email'        => $email,
                   'c_phone'       => $phone,
                   'c_receive'       => $ckaccept,
@@ -41,6 +45,7 @@
                 ),
                 array(
                   '%s',
+                    '%s',
                   '%s',
                   '%s',
                   '%s',

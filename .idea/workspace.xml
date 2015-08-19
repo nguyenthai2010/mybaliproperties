@@ -28,61 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/footer.php">
+      <file leaf-file-name="xtemplate.contact.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.225806" vertical-offset="687" max-vertical-offset="1562">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.42117116" vertical-offset="660" max-vertical-offset="1584">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class.single.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/js/class.single.js">
+      <file leaf-file-name="xtemplate.contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="632" max-vertical-offset="4686">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.387097" vertical-offset="1056" max-vertical-offset="2310">
-              <caret line="39" column="14" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validate.contact.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/js/validate.contact.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7086093" vertical-offset="700" max-vertical-offset="1826">
-              <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validate.newsletter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/js/validate.newsletter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact_me.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/js/contact_me.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1716">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.677419" vertical-offset="0" max-vertical-offset="528">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -91,8 +51,8 @@
       <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.290323" vertical-offset="1435" max-vertical-offset="2310">
-              <caret line="91" column="41" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="41" />
+            <state vertical-scroll-proportion="-10.4838705" vertical-offset="643" max-vertical-offset="2310">
+              <caret line="44" column="61" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -112,9 +72,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/inc/change_label_post.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/sass/_sidebar.scss" />
         <option value="$PROJECT_DIR$/wp-config - live.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.contact.html" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/user_request/user_request.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.contact.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/sass/_responsive.scss" />
@@ -129,8 +87,10 @@
         <option value="$PROJECT_DIR$/form.html" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/js/validate.newsletter.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/sidebar.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/js/validate.contact.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/sidebar.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.contact.html" />
+        <option value="$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.contact.php" />
       </list>
     </option>
   </component>
@@ -262,7 +222,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="email" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -561,31 +521,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.806452" vertical-offset="0" max-vertical-offset="484">
-          <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/user_request/user_request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33293977" vertical-offset="3634" max-vertical-offset="9724">
-          <caret line="178" column="26" selection-start-line="178" selection-start-column="22" selection-end-line="178" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.sendtoadmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.074324325" vertical-offset="0" max-vertical-offset="888">
           <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9232558" vertical-offset="416" max-vertical-offset="1474">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -712,14 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.290323" vertical-offset="1435" max-vertical-offset="2310">
-          <caret line="91" column="41" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/js/validate.newsletter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
@@ -730,8 +661,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/js/validate.contact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7086093" vertical-offset="700" max-vertical-offset="1826">
+        <state vertical-scroll-proportion="0.0" vertical-offset="502" max-vertical-offset="1826">
           <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/user_request/user_request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-70.83871" vertical-offset="1720" max-vertical-offset="9724">
+          <caret line="178" column="26" selection-start-line="178" selection-start-column="22" selection-end-line="178" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.4838705" vertical-offset="643" max-vertical-offset="2310">
+          <caret line="44" column="61" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.677419" vertical-offset="0" max-vertical-offset="528">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/mybaliproperties/email/xtemplate.contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42117116" vertical-offset="660" max-vertical-offset="1584">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding />
         </state>
       </provider>
