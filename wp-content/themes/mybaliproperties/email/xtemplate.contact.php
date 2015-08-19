@@ -5,7 +5,7 @@
     add_action("wp_ajax_nopriv_contact_request", "contact_form");
     function 	contact_form(){
         $name = $_REQUEST['cname'];
-        $surname = $_REQUEST['csurnamecsurname'];
+        $surname = $_REQUEST['csurname'];
 
         $email = $_REQUEST['cemail'];
         $phone = $_REQUEST['cphone'];
