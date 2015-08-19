@@ -37,8 +37,13 @@ $contact_mail = get_field('contact_mail', get_the_ID());
                 <form id="contactform" name="" action="" method="post" class="wpcf7-form">
                     <p>
                         <span class="wpcf7-form-control-wrap your-name">
-                            <input type="text" name="cname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*">
+                            <input type="text" name="cname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name*">
                         </span> 
+                    </p>
+                    <p>
+                        <span class="wpcf7-form-control-wrap your-name">
+                            <input type="text" name="csurname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Surname*">
+                        </span>
                     </p>
                     <p>
                         <span class="wpcf7-form-control-wrap your-email">
@@ -67,6 +72,8 @@ $contact_mail = get_field('contact_mail', get_the_ID());
                     <input name="action" type="hidden" class="action" value="contact_request"/>
                     <input name="ajaxurl" type="hidden" class="ajaxurl" value="<?php echo bloginfo('home').'/wp-admin/admin-ajax.php'; ?>"/>
                 </form>
+
+
             </div>
         </div>
     </div>
@@ -76,13 +83,13 @@ $contact_mail = get_field('contact_mail', get_the_ID());
 and investment opportunities</h3>
             <form action="http://kiokarma.createsend.com/t/i/s/tidix/" method="post" id="subForm">
                 <p>
-                    <input id="fieldName" name="cm-name" type="text" placeholder="First Name" />
+                    <input id="fieldName" name="cm-name" type="text" placeholder="First Name"  value=""/>
                 </p>
                 <p>
-                    <input id="fieldjdiddd" name="cm-f-jdiddd" type="text" placeholder="Surname"/>
+                    <input id="fieldjdiddd" name="cm-f-jdiddd" type="text" placeholder="Surname" value=""/>
                 </p>
                 <p>
-                    <input id="fieldEmail" name="cm-tidix-tidix" type="email"  placeholder="Email"/>
+                    <input id="fieldEmail" name="cm-tidix-tidix" type="email"  placeholder="Email"  value=""/>
                 </p>
                 <p>
                     <button type="submit" id="btn-newsletter" class="btn btn-success">SUBSCRIBE TO OUR NEWSLETTER</button>

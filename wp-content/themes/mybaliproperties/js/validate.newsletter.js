@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    
+
 	 jQuery("#subForm").validate({
         rules: {
-            
+
             'cm-tidix-tidix':{
             	required: true,
             	email: true
@@ -10,11 +10,10 @@ $(document).ready(function(){
         },
         errorPlacement: function(error, element){},
         submitHandler: function(form) {
-            $("#subForm")[0].reset();
             form.submit();
         }
 
      });
 
-    
+
 });

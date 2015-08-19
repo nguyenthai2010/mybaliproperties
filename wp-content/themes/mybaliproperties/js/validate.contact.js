@@ -7,6 +7,9 @@ $(document).ready(function(){
             'cname': {
                 required: true
             },
+            'csurname': {
+                required: true
+            },
             'cemail':{
             	required: true,
             	email: true
@@ -18,6 +21,8 @@ $(document).ready(function(){
 
             running = true;
             $('.ajax-loader').show();
+
+            var acceptCK = $('.acceptCk .icheckbox').hasClass('checked') ? 1:0;
 
             $form = $(form);
             $.ajax({
@@ -32,7 +37,7 @@ $(document).ready(function(){
                     running = false;
 
                     var msg = 'Message sent successful!';
-                    console.log(response);
+                    //console.log(response);
                     if(response == 1){
 
                     }else{
@@ -43,11 +48,24 @@ $(document).ready(function(){
 
                     $('.alert-success').show();
                     $('.ajax-loader').hide();
-                    $("#contactform")[0].reset();
+
                     $('.icheckbox').removeClass('checked');
                     setTimeout(function(){
                         $('.alert-success').hide();
                     },2000);
+
+                    //send to receive the newsletters
+                    if(acceptCK == 1){
+                        $('#fieldName').val( $('input[name="cname"]').val() );
+                        $('#fieldjdiddd').val( $('input[name="csurname"]').val() );
+                        $('#fieldEmail').val( $('input[name="cemail"]').val() );
+                        $('#subForm')[0].submit();
+
+                    }else {
+                        $("#contactform")[0].reset();
+                    }
+
+
                 }
             });
 
