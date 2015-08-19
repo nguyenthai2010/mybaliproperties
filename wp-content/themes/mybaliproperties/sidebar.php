@@ -66,7 +66,7 @@ $contact_mail = get_field('contact_mail', get_the_ID());
                     </div>
                     <p>
                         <input type="submit" value="SEND US YOUR QUESTIONS" class="wpcf7-form-control wpcf7-submit">
-                        <img class="ajax-loader" src="<?php echo content_url();?>/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="dislay: none;">
+                        <img class="ajax-loader" src="images/ajax-loader.gif" alt="Sending ..." style="dislay: none;">
                     </p>
                     <div class="alert alert-success" style="display: none;" role="alert">Message sent successful!</div>
                     <input name="action" type="hidden" class="action" value="contact_request"/>
