@@ -176,6 +176,13 @@ footer {
   }
 }
 
+.info-detail {
+  a {
+    color: #2ac79d;
+    text-decoration: underline;
+  }
+}
+
 .info-views .panel-body {
   position: relative;
   overflow: hidden;
@@ -213,6 +220,10 @@ footer {
     }
   }
 
+}
+
+.info-location {
+  clear: both;
 }
 .carousel-control .icon-prev {
   margin-left: 0;
