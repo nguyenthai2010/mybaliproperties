@@ -159,8 +159,8 @@ var clsProperties = (function() {
     function twShare(){
         var share_url = $("meta[name='twitter:url']").attr("content");
         var description = $("meta[name='twitter:description']").attr("content");
-        if(description.length > 96){
-            description = description.substr(0,96);
+        if(description.length > 110){
+            description = description.substr(0,110);
             var last_space= description.lastIndexOf(' ');
             if(last_space > 0){
                 description = description.substr(0,last_space);

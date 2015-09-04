@@ -23,29 +23,30 @@
 
         $description_share = strip_tags($content);
 
-    } else {
-        $description_share = bloginfo('description');
-    }
+        $share_content = get_field('share_content', get_the_ID());
+        $share_title = get_field('share_title', get_the_ID());
+        $share_image_arr = get_field('share_image', get_the_ID());
+        $share_image = $share_image_arr['url'];
+        $share_url = get_permalink( get_the_ID() );
 
-    $arr_img = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'large');
-    $image_share = $arr_img[0];
+    }
 
     ?>
     <meta property="og:site_name" content="My Bali Properties" />
-    <meta property="og:title" content="<?php echo $title_share == '' ? 'My Bali Properties' : 'My Bali Properties - ' . $title_share; ?>" />
-    <meta property="og:description" content="<?=$description_share?>" />
-    <meta property="og:image" content="<?php echo $image_share != '' ? $image_share : '' ?>" />
-    <meta property="og:url" content="<?php echo get_home_url() ?>" />
+    <meta property="og:title" content="<?php echo $share_title == '' ? 'My Bali Properties' : $share_title; ?>" />
+    <meta property="og:description" content="<?=$share_content?>" />
+    <meta property="og:image" content="<?php echo $share_image != '' ? $share_image : '' ?>" />
+    <meta property="og:url" content="<?= $share_url ?>" />
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@MyBaliProperties">
-    <meta name="twitter:url" content="<?php echo get_home_url() ?>">
-    <meta name="twitter:title" content="<?php echo $title_share != '' ? 'My Bali Properties' : $title_share; ?>">
-    <meta name="twitter:description" content="<?=$description_share?>">
-    <meta name="twitter:image" content="<?php echo $image_share != '' ? $image_share : '' ?>">
+    <meta name="twitter:url" content="<?= $share_url ?>">
+    <meta name="twitter:title" content="<?php echo $share_title != '' ? 'My Bali Properties' : $share_title; ?>">
+    <meta name="twitter:description" content="<?=$share_content?>">
+    <meta name="twitter:image" content="<?php echo $share_image != '' ? $share_image : '' ?>">
     <!--End Sharing-->
 
-    <meta name="description" content="<?=$description_share?>" />
+    <meta name="description" content="<?=bloginfo('description')?>" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
