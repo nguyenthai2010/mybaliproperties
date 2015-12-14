@@ -87,7 +87,8 @@ get_header();
                 {
                     $i++;
                     $objpicture = $view['picture'];
-                    $thumbnail = $objpicture['sizes']['large'];
+                    print_r($objpicture['sizes']);
+                    $thumbnail = $objpicture['sizes']['medium'];
                     $large = $objpicture['url'];
                     ?>
                     <div class="col-md-3 col-sm-6">
