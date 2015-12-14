@@ -31,6 +31,8 @@ get_header();
             $objpicture = $view['picture'];
             //$thumbnail = $objpicture['sizes']['large'];
             $thumbnail = $objpicture['url'];
+            $thumbnail = get_template_directory_uri() . '/timthumb.php?src=' . urlencode($thumbnail) . '&h=620&w=1204&zc=1'; //&h=150&w=150&zc=1
+
             //print_r($objpicture);
             ?>
             <div class="item<?=$i==1?' active':''?>">
