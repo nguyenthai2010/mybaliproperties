@@ -87,7 +87,6 @@ get_header();
                 {
                     $i++;
                     $objpicture = $view['picture'];
-                    print_r($objpicture['sizes']);
                     $thumbnail = $objpicture['sizes']['medium'];
                     $large = $objpicture['url'];
                     ?>
