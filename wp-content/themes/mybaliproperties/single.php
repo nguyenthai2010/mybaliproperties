@@ -34,7 +34,9 @@ get_header();
             //print_r($objpicture);
             ?>
             <div class="item<?=$i==1?' active':''?>">
-                <div class="fill" style="background-image:url('<?=$thumbnail ?>');"></div>
+                <div class="fill">
+                    <img src="<?=$thumbnail ?>"/>
+                </div>
                 <div class="carousel-caption">
                     <h2></h2>
                 </div>
@@ -85,9 +87,8 @@ get_header();
                 {
                     $i++;
                     $objpicture = $view['picture'];
-                    $thumbnail = $objpicture['sizes']['small-cropped'];
+                    $thumbnail = $objpicture['sizes']['large'];
                     $large = $objpicture['url'];
-                    print_r($objpicture);
                     ?>
                     <div class="col-md-3 col-sm-6">
                         <div class="panel panel-default">

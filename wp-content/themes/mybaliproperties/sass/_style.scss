@@ -89,9 +89,6 @@ body {
   }
 }
 
-header.carousel {
-  height: 50%;
-}
 
 header.carousel .item,
 header.carousel .item.active,
@@ -105,7 +102,9 @@ header.carousel .fill {
   background-position: center;
   background-size: cover;
 }
-
+header.carousel .fill img{
+  max-width:100%;
+}
 .carousel-control.right, .carousel-control.left {
   background: none;
 }
