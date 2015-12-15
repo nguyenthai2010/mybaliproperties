@@ -4,6 +4,7 @@
         <?php
         $property_ID = get_the_ID();
         $views_array = get_field('views', get_the_ID());
+        $gallery_array = get_field('view_gallery', get_the_ID());
         $location_text = get_field('location_text', get_the_ID());
         $location_google_map = get_field('location_google_map', get_the_ID());
         $location_image_map = get_field('location_image_map', get_the_ID());
@@ -85,17 +86,17 @@ get_header();
                 </div>
                 <?php
                 $i = 0;
-                foreach($views_array as $view)
+                foreach($gallery_array as $gallery)
                 {
                     $i++;
-                    $objpicture = $view['picture'];
-                    $thumbnail = $objpicture['sizes']['large'];
-                    $large = $objpicture['url'];
+                    $objgallery = $gallery['picture'];
+                    $thumbnail = $objgallery['sizes']['large'];
+                    $large = $objgallery['url'];
                     ?>
                     <div class="col-md-3 col-sm-6">
                         <div class="panel panel-default">
                             <div class="panel-body">
-                                <a href="<?=$large?>" rel="fancybox-thumb" class="fancybox"><img src="<?=$thumbnail?>"></a>
+                                <a href="<?=$large?>" rel="fancybox-thumb" class="fancybox"><div class="gallery_thumb" style="background: url('<?=$thumbnail?>') center;background-size: cover; "></div></a>
                                 <i class="fa fa-search"></i>
                             </div>
                         </div>
